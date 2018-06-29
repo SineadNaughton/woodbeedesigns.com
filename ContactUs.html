@@ -1,17 +1,11 @@
-<!--Timothy Bergin
-   Form Submission Web Page
-   in HTML
- -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Wood Bee Designs Contact Us</title>
-		<link href="ContactUs.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<title>Wood Bee Designs - Contact Us</title>
+		<link href="ContactUs.css" rel="stylesheet">		
 		<link href="CommonStyleElements.css" rel="stylesheet">
-		<script src="ContactUs.js">
-		</script>
-		
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<script src="ContactUs.js"></script>		
 		<meta content="width=device-width" name="viewport">
 	</head>
 	<body>
@@ -43,109 +37,35 @@
 				</li>
 			</ul>
 		</nav>
-		<div id="TopSection">
-		<div class="OpeningHeader">
-			<h1>We Can't Wait To Hear From You!</h1>
-			<p>Please use the form below to get in touch with us and we'll do our very best to get back to you within 24 hours. Below is also directions to our workshop, feel free to pay us a visit anytime and check out our work. Just let us know first so we can make sure to put the kettle on!</p>
-		</div><img alt="Kitchen Image" id="TopImage" src="Images/KitchenTraditionalColourBlock.jpg"></div><!--form-->
-		<form action="action_page.php" id="CompanyForm" name="CompanyForm" onsubmit="return validateForm()">
-			<h2>Get In Touch</h2>
-			<p>Fill in your details below and we'll be in touch shortly</p>
-			<table>
-				<tbody>
-					<tr>
-						<td><label for="name">Name:</label></td>
-						<td><input id="name" name="name" placeholder="Enter your name" type="text"></td>
-					</tr>
-					<tr>
-						<td><label for="email">Email:</label></td>
-						<td><input id="email" name="email" placeholder="Enter your email" type="email"></td>
-					</tr>
-					<tr>
-						<td><label for="phone">Phone:</label></td>
-						<td><input id="phone" name="phone" placeholder="Enter your phone number" type="text"></td>
-					</tr>
-				</tbody>
-			</table>
-			<p>Preferred contact method:</p>
-			<label for="choosePhone">Phone</label> 
-			<input id="choosePhone" name="contactChoice" type="radio" value="phone"> 
-			<label for="chooseEmail">Email</label> 
-			<input id="chooseEmail" name="contactChoice" type="radio" value="email">
-			<p>Preferred contact time</p><select name="time">
-				<option>
-					Select a time
-				</option>
-				<option value="morning">
-					Morning
-				</option>
-				<option value="afternoon">
-					Afternoon
-				</option>
-				<option value="evening">
-					Evening
-				</option>
-			</select><br>
-			Where did you hear about us?:<br>
-			<select name="List of Information Sources">
-				<option>
-					Select an option
-				</option>
-				<option value="Word of Mouth">
-					Word of Mouth
-				</option>
-				<option value="Social Media">
-					Social Media
-				</option>
-				<option value="Newspaper">
-					Newspaper
-				</option>
-				<option value="Magazines or other Print Media">
-					Magazines or other Print Media
-				</option>
-				<option value="Google">
-					Google
-				</option>
-				<option value="Other">
-					Other
-				</option>
-			</select><br>
-			<label for="products">Which of the following are you interested in finding out about (you may tick both)</label><br/>
-			Updating my old kitchen		<input id="update" name="product update" type="checkbox">
-			Getting a new kitchen	<input id="new" name="product new" type="checkbox">
-			<p>Comments:</p>
-			<textarea cols="50" placeholder="Feel free to tell us a little bit more information about why you want to get in touch." rows="4">          </textarea><br>
-			<input type="submit" value="Submit">
-		</form>
-		
-		<div id="CompanyMap">
-			<h2>Directions to the Workshop</h2>
-			<p>We are based in the village of Rinn just outside Dungarvan town. When you get to the village, take the first right after the Spar shop, our workshop is the third building on the left.</p>
-			
+        <div id="TopSection">
+            <div class="OpeningHeader">
+                <h1>We Can't Wait To Hear From You!</h1>
+                <p>Please use the form below to get in touch with us and we'll do our very best to get back to you within 24 hours. Below is also directions to our workshop, feel free to pay us a visit anytime and check out our work. Just let us know first so we can make sure to put the kettle on!</p>
+            </div><img alt="Kitchen Image" id="TopImage" src="Images/KitchenTraditionalColourBlock.jpg">
+            <div class="OpeningHeader" style="width:80%; margin-bottom:0;">
+                <h2>Directions to the Workshop</h2>
+                <p>We are based in the village of Rinn just outside Dungarvan town. When you get to the village, take the first right after the Spar shop, our workshop is the third building on the left.</p>
+            </div>
+                <div id="map"></div>
+                <script>
+                    function initMap() {
+                        var Waterford = { lat: 52.046894, lng: -7.572060 };
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            zoom: 7,
+                            center: Waterford
+                        });
+                        var marker = new google.maps.Marker({
+                            position: Waterford,
+                            map: map
+                        });
+                    }
+                </script>
 
-			<div id="map"></div>
-
-			<script>
-			  function initMap() {
-				var Waterford = {lat: 52.046894, lng: -7.572060};
-				var map = new google.maps.Map(document.getElementById('map'), {
-				  zoom: 7,
-				  center: Waterford
-				});
-				var marker = new google.maps.Marker({
-				  position: Waterford,
-				  map: map
-				});
-			  }
-			</script>
-
-			<script async defer
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2ioL-76_dxSNYGxV-FExa_lAiFlLCpp0&callback=initMap">
-			</script>
-			
-			
-			
-		</div>
+                <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2ioL-76_dxSNYGxV-FExa_lAiFlLCpp0&callback=initMap">
+                </script>
+        </div>
+		<br />														
 		<!--footer-->
 		<div id="footer-container">
 			<img alt="Wood Bee Designs Logo" id="footerLogo" src="images/LogoFoot.png">
