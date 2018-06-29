@@ -1,0 +1,179 @@
+/*AUTHOR TIMOTHY BERGIN*/
+
+/*COMPANY INFORMATION IN HEADER*/
+
+body{
+	font-family: Raleway, sans-serif;
+	letter-spacing: .1em;
+	line-height: 2em;
+	color: #4D4C4E;
+}
+
+/*NAV BAR, HEADER, and FOOTER LINKED IN HEADERFOOTER.CSS*/
+
+
+/*intro and image*/
+
+#TopSection{
+	clear:both;
+	margin-top: 5%;
+}
+
+.OpeningHeader {
+	 text-align: center;
+	 margin-left: 10%;
+
+	 margin-bottom:5%;
+	 margin-right:6%;
+	 text-align: center;
+	 width:40%;
+	 float: left;
+	 }
+
+
+	 
+#TopImage{
+	width: 30%;
+	float: right;
+	margin-right:10%;
+	margin-bottom: 4%;
+	border: dashed #4D4C4E 2px;
+	border-radius: 10px;
+	padding:1%;
+	 }
+
+/*form*/
+
+#CompanyForm {
+	 font-size: 1em;
+	 text-align: left;
+	 padding: 2% 5%;
+	 margin: 2%;
+	 color: #0C0C0C;
+	 background-color: #B2B6B4;
+	 float: left;
+	 width: 30%;
+	 clear: both;
+     }
+	 
+#CompanyForm h2{
+	text-align: left;
+}
+
+#CompanyForm p{
+	text-align: left;
+}
+
+
+textarea{
+	width: 90%;
+}
+
+
+
+/*map*/
+
+#CompanyMap {
+     float: right;
+     margin-left: 5%;
+     margin-right: 10%;
+	 width: 40%;
+	 margin-top: 3%;
+}
+	 
+#CompanyMap h2{
+	 text-align: center;
+	 width: 90%;
+	 margin: auto;
+}
+
+#CompanyMap p{
+	 font-size:1em;
+	 text-align: center;
+	 width: 90%;
+	 margin: auto;
+}
+
+#map{
+	height: 300px;
+	width: 60%;	
+	margin: auto;
+	margin-top: 5%;
+	
+}
+
+/*media queries to alter on a tablet or altered screen - meta tag in html to use max-width as max-device width as well*/
+@media only screen and (max-width: 1024px) { 
+
+	textarea{
+		width: inherit;
+	}
+	
+	#CompanyForm{
+		float: none;
+		display: block;
+		width: 90%;
+		margin: auto;	
+	}
+	
+	#CompanyMap{
+		float: none;
+		display: block;
+		width: 70%;
+		margin: auto;
+		margin-top: 5%;
+	}
+	
+	#CompanyMap h2{	
+	text-align: center;
+	}
+	
+	#CompanyMap p{
+		font-size: 14px;
+		text-align: center;
+		margin: auto;
+	}
+
+	#map {
+		width: 90%;
+		height: 200px;
+		margin-bottom: 5%;
+	}
+}
+		
+	 
+@media only screen and (max-width: 768px) {
+	.OpeningHeader{
+		float: none;
+		display: block;
+		width: 90%;
+		margin: auto;
+	}
+	.OpeningHeader p{
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+	#TopImage{
+		float: none;
+		display: block;
+		width: 70%;
+		margin: 3% auto;
+	}
+}
+		
+
+
+@media only screen and (max-width: 480px){
+	#TopImage{
+		display: none;
+	}
+	
+	.OpeningHeader p{
+		display:none;
+	}
+}
+
+
+
+

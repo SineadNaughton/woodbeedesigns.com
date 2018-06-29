@@ -1,0 +1,263 @@
+/*AUTHOR SINEAD NAUGHTON*/
+
+/* font-size, color, and style for whole page */
+body{
+	font-family: Raleway, sans-serif;
+	letter-spacing: .1em;
+	line-height: 2em;
+	color: #4D4C4E;
+	font-size: 1em;
+}
+/*NAV BAR, HEADER, and FOOTER LINKED IN HEADERFOOTER.CSS*/
+
+
+/*large showcase image*/
+#largeimage {
+	width: 100%;
+	height: auto;
+}
+/*opening intro paragraph and unique selling points*/
+#intro {
+	clear: both;
+	text-align: center;
+	margin-top: 5%;
+}
+
+#intro h1{
+	width: 90%;
+	text-align: center;
+	margin: auto;
+}
+#intro p{
+	margin-left: 10%;
+	margin-right: 10%; 
+	margin-bottom: 3%;
+	width: 80%;	
+	font-size: 1.1em;
+}
+
+
+/*Section on page with floating icons give unique selling points for Wood Bee*/
+#USP{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.icon{
+	float: left;
+	width: 23.33333%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 6%;
+	font-size:1em;
+	text-align: center;
+}
+
+.icon img{
+	width: 50%;
+}
+
+.icon h3{
+	margin-top: 0;
+}
+
+/*links to further info on site, this uses JS to alter between two elements #flex-container and #flex-container1.  The are in flex boxes so the height of the text piece always stays the same as the image piece*/
+
+
+#flex-container1, #flex-container2{
+  display: flex;
+  clear: both;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+#flex-container1 .flex-container-item {
+  background-color: #4D4C4E;
+  color: white;
+  margin: 0;
+  text-align: center;
+  flex: 1;
+  min-height:400px;
+}
+
+
+#flex-container2 .flex-container-item {
+  background-color: #4D4C4E;
+  color: white;
+  margin: 0;
+  text-align: center;
+  flex: 1;
+  min-height:400px;
+}
+
+#flex-container2 .flex-container-item, #flex-container-image1, #flex-container-image2 {
+	background-color: #4D4C4E;
+	margin: 0;
+	flex: 1;
+	min-height:400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: auto;
+}
+
+#flex-container-image1{	
+	background-image: url("Images/HandsCarpentry 8.jpg");
+}
+
+#flex-container-image2{	
+	background-image: url("Images/BlueComtempary.jpg");
+}
+
+.flex-container-item-button{
+	display:inline-block; 
+	border:1px solid grey; 
+	padding:0px 16px; 
+	color:white; 
+	background-color:black; 
+	border-radius:5px; 
+	text-decoration:none;
+}
+
+.flex-container-item p{
+	padding: 4%;
+}
+
+.flex-container-item h2{
+	padding-top: 4%;
+}
+
+/* section for testimonials, starts with heading and line of intro and then there is a flexbox taht contains there quotes, flexbox used as no matter what length the quotes they will always stay in line with each other*/
+#testimonial{
+	clear: both;
+	margin-top: 5%;
+	margin-bottom: 3%;
+}
+
+#testimonial {
+	clear: both;
+	text-align: center;
+}
+#testimonial h1{
+	width: 50%;
+	text-align: center;
+	margin: auto;
+}
+
+#testimonial p{
+	margin: auto;
+	width: 80%;
+	font-size: 1.1em;
+}
+
+#quotes{
+	display: flex;
+	flex-wrap: wrap;
+	clear: both;
+	align-items: stretch;;
+}
+
+#quotes h3{
+	font-size: 1.5em;
+}
+.quote{
+	border: 2px #4D4C4E solid;
+	border-radius: 30px;
+	margin: 5%;
+	padding: 1%;
+	text-align: center;
+	line-height: 2.5em;
+	flex-grow: 1;
+	flex: 1;
+	font-size: .8em;
+	width: 20%;
+	background-color: white;
+}
+
+/*the quotes alter in size when hovered over and JS changes their background color*/
+.quote:hover{
+	transform: scale(1.5, 1.2);
+}
+
+
+
+/*
+MEDIA QUERIES
+for media queries - choosen to use max-width and a meta tag in html saying that the width=device-width, instead of max-device-width, this is the to make the desktop screen alter as it changes size as well as on different devices*/
+
+/*this choosen as screen breakpoint where quote content not displaying correctly*/
+@media(max-width: 1000px) {
+    #quotes{
+		flex-direction: column;
+	}
+	
+	.quote{
+        width: 80%;
+		align-self: center;
+    }
+}
+/*this choosen as screen breakpoint where icon content not displaying correctly*/
+@media(max-width: 800px) {
+	.icon p{
+	display: none;
+	}	
+}
+/*this choosen as screen breakpoint where content not displaying correctly
+Ipad min size is 768 - no altrerationg was needed to this content for that size other than what was already done.  But when the browser resizes to lower these were obscured
+
+1.the section in the middle of the webpage that has an image and links and changes needed to be stacked
+
+*/	
+@media only screen and (max-width: 700px) {
+	 #flex-container1 {
+		flex-direction: column;
+	}
+  
+	#flex-container2 {
+		flex-direction: column;
+	}
+}
+
+
+/*For a large smart phone, small tablet, or resizes browser
+1, 2, 3.the section under the introduction with the icons - the paragraph text is removed, the icons are stacked, the icon image size is altered
+4. a piece of text in a span tag is removed from intro for mobile view
+5. displays a link at bottom of screen to contact - as the nav no longer sticky
+*/
+@media only screen and (max-width: 640px){
+	.icon{
+        min-width: 80%;
+		margin: auto;
+		float: none;
+		display:block;
+    }
+	
+	.icon img{
+		width: 50%;
+		margin-top: 2%;
+	}
+	.icon p{
+		display: none;
+	}	
+	#hide-in-mobile{
+		display: none;
+	}
+	#display-in-mobile{
+		display: block;
+	}
+}
+
+/* media query for small smartphone or small window view - make text easier to read on small screen
+1. Makes paragraph a better size for smaller screen
+2. stops button link being pushed out of area in small screen
+*/
+@media only screen and (max-width: 480px) {
+
+	#intro p{
+		font-size: 14px;
+	}
+	
+	.flex-container-item p{
+		margin-bottom: 0;
+	}
+}

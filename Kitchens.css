@@ -1,0 +1,133 @@
+/*AUTHOR DAVID COWELL*/
+
+
+/*COMPANY INFORMATION IN HEADER*/
+
+body{
+	font-family: Raleway, sans-serif;
+	letter-spacing: .1em;
+	line-height: 2em;
+	color: #4D4C4E;
+}
+
+/*NAV BAR, HEADER, and FOOTER LINKED IN HEADERFOOTER.CSS*/
+
+
+ /*COMPANY INTRODUCTION*/
+
+ .OpeningHeader{
+	 text-align: center;
+	 margin-top: 5%;
+ }
+ 
+  .OpeningHeader p{
+	width: 80%;
+	margin: auto;
+ }
+
+
+/*KITCHEN IMAGES AND DESCRIPTIONS*/
+
+.Kitchen1{
+	clear: both;
+	width: 100%;
+	padding: 0 20px 20px 0;
+}
+
+.Kitchen1 img{
+	width: 33%;
+	float: left;
+	margin: 5% 10%;
+	border: dashed #4D4C4E 2px;
+	border-radius: 10px;
+	padding:1%;
+	
+}
+
+.Kitchen1 p{
+	width: 30%;
+	float: right;
+	margin: 7%;
+	margin-left: 0;
+	margin-right: 10%;
+	text-align: justify;
+}
+
+
+.Kitchen2{
+	clear: both;
+	width: 100%;
+	padding: 0 20px 20px 0;
+}
+
+.Kitchen2 img{
+	width: 33%;
+	float: right;
+	margin: 5% 10%;
+	border: dashed #4D4C4E 2px;
+	border-radius: 10px;
+	padding:1%;
+}
+
+.Kitchen2 p{
+	width: 30%;
+	float: left;
+	margin: 7%;
+	margin-right: 0;
+	margin-left: 10%;
+	text-align: justify;
+}
+
+
+
+
+/*media queries to alter on a tablet or altered screen - meta tag in html to use max-width as max-device width as well*/
+	
+/* media query for to stack page content after tablet size*/
+@media only screen and (max-width: 768px) {
+	.Kitchen1 img{
+		float: none;
+		display: block;
+		width: 70%;
+		margin: auto;
+	}
+	
+	.Kitchen1 p{
+		float: none;
+		display: block;
+		width: 80%;
+		margin: 3% auto;
+		line-height: 1.5em;
+	}
+	
+	.Kitchen1{
+		margin-top: 3%;
+	}
+	.Kitchen2 img{
+		float: none;
+		display: block;
+		width: 70%;
+		margin: auto;
+	}
+	
+	.Kitchen2 p{
+		float: none;
+		display: block;
+		width: 80%;
+		margin: 3% auto;
+		line-height: 1.5em;
+	}
+	
+	.hide-mobile{
+		display: none;
+	}
+}
+
+/* media query for smartphone - make text better size on small screen*/
+@media only screen and (max-width: 480px) {
+	p{
+		font-size: 14px;
+	}
+}
+	
+	

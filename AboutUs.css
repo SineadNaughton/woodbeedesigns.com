@@ -1,0 +1,142 @@
+/*AUTHOR DINGFEN ZHONG*/
+
+body{
+	font-family: Raleway, sans-serif;
+	letter-spacing: .1em;
+	line-height: 2em;
+	color: #4D4C4E;
+	font-size: 1em;
+}
+
+/*NAV BAR, HEADER, and FOOTER LINKED IN HEADERFOOTER.CSS*/
+/* Main content below header*/
+
+.maincontent{
+	height:auto;
+	margin:auto;
+	text-align:center;
+	margin-top: 5%;
+}
+
+.maincontent h1{
+	font-size: 2em;
+}
+
+
+.maincontent p{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:0;
+	font-size: 1em;
+	font-weight: normal;
+}
+
+
+
+.image{
+	float: left;
+	width: 25%;
+	margin:2%;
+	border: dashed #4D4C4E 2px;
+	border-radius: 10px;
+	padding:1%;
+	
+}
+
+
+
+/*FAQ section*/
+
+.FAQ h1{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	clear: both;
+	margin-top: 3%;
+	margin-bottom: 2%;
+}
+
+#accordion{
+	clear: both;
+}
+
+#accordion{
+	padding: 2px;
+	font-family: 'raleway';
+	font-size: 1em;
+	text-indent: 4px;
+	align-content: center;
+	flex-grow: 1;
+	flex: 1;
+}
+
+#accordion h3{
+  font-size: 1em;
+  font-family: 'raleway';
+  color: #4D4C4E;
+}
+
+#accordion h3{
+	cursor:pointer;
+	font-weight: bold;
+  line-height: 2em;
+  background-color: #B2B6B4;
+  border: 1px #666666 solid;
+}
+#accordion p{
+  margin-left: 0;
+   padding: 1em 0;
+  font-size: 1em;
+}
+#accordion h3 p .a5{
+	margin-bottom: 15%;
+}
+
+
+#footer-container{
+	margin-top: 5%;
+}
+
+
+/*media queries to alter on a tablet or altered screen - meta tag in html to use max-width as max-device width as well*/
+
+
+/* make images stack on smaller screen - altered desktop view or a large mobile phone - */
+@media only screen and (max-width: 620px) {
+	.image{
+		float: none;
+		display: block;
+		width: 80%;
+		margin: 2% auto;
+	}
+}
+
+/* media query for smartphone - make text easier to read on small screen*/
+@media only screen and (max-width: 480px) {
+		
+		
+		
+	/* removes a paragraph of text from intro, and resizes intro text*/
+	.maincontent h1{
+		width: 100%;
+	}
+	.maincontent h2{
+		width: 100%;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+	.maincontent p{
+		font-size: 1.4em;
+	}
+	.image{
+		float: none;
+		display: block;
+		width: 80%;
+		margin: 2% auto;
+	}
+	
+	.hide-mobile{
+		display: none;
+	}
+}

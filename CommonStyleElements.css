@@ -1,0 +1,336 @@
+/*AUTHOR SINEAD NAUGHTON*/
+
+body{
+	font-family: Raleway, sans-serif;
+	letter-spacing: .1em;
+	line-height: 2em;
+	color: #4D4C4E;
+}
+
+/*head*/
+/*header - made in flex box contains logo, contact info and facebook link.  the flexbox items will stack on mobile*/
+
+
+#header{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+#logo{
+	flex:1;
+	margin: 1% 5%;
+	align-self: center;
+	min-width: 30%;
+	
+}
+#contactinfo{
+	flex: 1;
+	align-self: center;
+	margin-left: 10%;
+	margin-right: 5%;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: 1%;
+	border: dashed #4D4C4E 2px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+#contactinfo p{
+		margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+#headerFB{
+	flex: .5;
+	align-self: center;
+}
+
+#headerFB a{
+	background-color: white;
+	position: inherit;
+}
+
+#headerFB img{
+	position: inherit;
+}
+
+
+
+/*nav - it's sticky on large tab on desktop so it always remains on screen.  The links chenge color when hovered over and the contact us link gets a different colour to make it stand out.  On mobile the navigation will stack*/
+nav{
+	clear: both;
+	margin:0;
+	position: sticky;
+	top:0;
+	font-size: 1em;
+	border: white solid;
+	border-width: 2px 0;
+}
+nav ul {
+  
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    clear: both;
+    width: 100%;
+}
+
+.navItem {
+	float: left;
+	width: 25%;
+}
+
+.navItem  a{
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 8px;
+	background-color: #4D4C4E;
+	display: block;
+}
+/*Contact Us is in yellow to stand out*/
+#contact a{
+	color: black;
+	display: block;
+	background-color: #FED728;
+}
+
+/*change colour of link when hovered over*/
+.navItem a.active {
+    background-color: #B2B6B4;
+    color: white;
+}
+
+.navItem a:hover:not(.active) {
+    background-color: black;
+    color: white;
+}
+
+#contact a.active{
+	color: black;
+	display: block;
+	background-color: #FED728;
+}
+
+#contact a:hover:not(.active) {
+    background-color: black;
+    color: white;
+}
+
+
+/*footer - made in a flex box.  Contains logo, address and contact info, nav links, and facebook link.  Different parts appear depending on the size screen you are viewing it on*/
+#footer-container{
+	display:flex;
+	flex-direction: row;
+	width: 100%;
+	clear:both;
+	align-items: stretch;
+	color: #0C0C0C;
+	background-color:#4D4C4E;
+}
+
+
+#footerLogo{
+	flex: 1;
+	align-self: center;
+	background-color: #4D4C4E;
+	margin-left: 2%;
+	margin-right: 2%;
+	width: 15%;
+	height: auto;
+}
+
+#footerAdress{
+	flex: 1;
+	color: white;
+	align-self: center;
+}
+
+#footerNav{
+	flex:3;
+	align-self: center;	
+}
+
+#footerNav ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.fNavItem{
+	float: left;
+	width: 15%;
+	margin-right: 3%;
+	text-align: center;
+	color: white;
+	display: block;
+	font-size: .8em;
+}
+
+#footerNav li a{
+	text-decoration: none;
+	color: white;
+}
+
+
+
+#footerFB{
+	flex: .5;
+	align-self: center;
+	
+}
+
+#footerFB img{
+	position: inherit;
+	float: right;
+	margin-right: 10%;
+	width: 50%;
+}
+/*this is a link to contact us page only to be displayed on mobile when the nav is no longer sticky*/
+#display-in-mobile{
+	display: none;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: #0C0C0C;
+	background-color: #FED728;
+	margin: 2%;
+}
+
+
+/*for media queries - choosen to use max-width (and the "viewpoint" meta tag in the html) instead of max-device-width, this is the to make the desktop screen alter as it changes size as well as on different devices*/
+
+
+/*stackes footer nav*/
+/*facebook logo out of header, and larger in footer, and stack footer navigation in small view or ipad screen*/
+@media only screen and (max-width: 1024px){
+	#headerFB{
+		display: none;
+	}
+	
+	#footerFB img{
+		width: 80%;
+	}
+	
+	.fNavItem{
+		float: none;
+		display: block;
+		width: 100%;
+		padding: 0;
+	}
+	
+	.fNavItem a{
+		padding: 0;
+	}
+	
+}
+/*breakpoint when adjusting screen size and footer nav becomes obscured - this will stack it*/
+@media only screen and (max-width: 700px){
+	.navItem{
+		width: 100%;
+		float: none;
+		display: block;
+	}
+	
+	nav{
+		position: relative;
+	}
+	
+}
+
+/*hide footer navigation, and adjust footer facebook logo, on small view or large smart phone view, */
+@media only screen and (max-width: 640px){
+	#footerNav {
+    display: none;
+	}
+  
+	#footerFB img{
+		width: 20%;
+		margin-right: 40%;
+		margin-left: 40%;
+		float: none;	
+	}
+	
+	#display-in-mobile{
+		display: block;
+	}
+}
+
+/* media query for small view or small smart phone*/
+@media only screen and (max-width: 480px){
+	  /*make contact info section in header smaller*/
+	#contactinfo{
+		max-width: 80%;
+	}
+	
+	#contactinfo p{
+		font-size: 16px;
+	}
+	
+	/*give nav items less padding - makes slimmer for smaller screen*/
+	.navItem a{
+		font-size: 14px;
+		padding-top: 2px;
+		padding-bottom:2px;
+	}
+	
+	/*aligns the now stacked contact into in header and footer */
+	#footerAdress, #contactinfo{
+		align-self:center;
+		margin: auto;
+	}
+	
+	/*stacks info in footer*/
+	#footer-container{
+		flex-direction: column;
+	}
+	
+	/*centers text in footer address*/
+	#footerAdress{
+		text-align: center;
+	}
+
+	/*increases logo size on small device*/
+	#footerLogo{
+		width: 30%;
+	}
+	/*centers and increases FB logo size on small device*/
+	#footerFB img{
+		width: 20%;
+		margin-right: 40%;
+		margin-left: 40%;
+		float: none;	
+	}
+}
+	
+
+
+	
+/*Site Map Styling*/
+
+
+#sitemap{
+	width: 90%;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 20%;
+	background-color: rgb(178,225,237,0.4);
+	padding-left: 7%;
+	border: dashed #4D4C4E 2px;
+	border-radius: 10px;
+}
+
+.siteMapItem a{
+	text-decoration: none;
+	Display: block;
+}
+
+
+	
+
+
+
+
