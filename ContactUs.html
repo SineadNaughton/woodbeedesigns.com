@@ -8,93 +8,102 @@
 		<script src="ContactUs.js"></script>		
 		<meta content="width=device-width" name="viewport">
 	</head>
-	<body>
-		<!--header-->
-		<div id="header">
-			<img alt="Wood Bee Designs Logo" id="logo" src="Images/Logo.png" width="60">
-			<div id="contactinfo">
-				<p>086 339 6048<br>
-				hi@woodbeedesigns.com</p>
-			</div>
-			<div id="headerFB">
-				<a href="https://www.facebook.com/woodbeeedesigns/"><img alt="Facebook Logo Link" src="Images/footerFacebook.png" width="60"></a>
-			</div>
-		</div>
-		<!--nav bar-->
-		<nav>
-			<ul>
-				<li class="navItem">
-					<a href="Home.html">HOME</a>
-				</li>
-				<li class="navItem">
-					<a href="AboutUs.html">ABOUT US</a>
-				</li>
-				<li class="navItem">
-					<a href="Kitchens.html">KITCHENS</a>
-				</li>
-				<li id="contact" class="navItem">
-					<a href="ContactUs.html">CONTACT US</a>
-				</li>
-			</ul>
-		</nav>
+    <body>
+        <!--@start - header-->
+        <div id="header">
+            <img alt="Wood Bee Designs Logo" id="logo" src="Images/Logo.png" width="60">
+            <div id="contactinfo">
+                <p>
+                    086 339 6048<br>
+                    hi@woodbeedesigns.com
+                </p>
+            </div>
+            <div id="headerFB">
+                <a href="https://www.facebook.com/woodbeeedesigns/"><img alt="Facebook Logo Link" src="Images/footerFacebook.png" width="60"></a>
+            </div>
+        </div>
+
+        <!--nav bar-->
+        <nav>
+            <ul>
+                <li class="navItem">
+                    <a href="Home.html">HOME</a>
+                </li>
+                <li class="navItem">
+                    <a href="AboutUs.html">ABOUT</a>
+                </li>
+                <li class="navItem">
+                    <a href="Kitchens.html">KITCHENS</a>
+                </li>
+                <li id="contact" class="navItem">
+                    <a href="ContactUs.html">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+        <!--@end - header-->
+        <!--@start - body-->
         <div id="TopSection">
             <div class="OpeningHeader">
                 <h1>We Can't Wait To Hear From You!</h1>
-                <p>Please use the form below to get in touch with us and we'll do our very best to get back to you within 24 hours. Below is also directions to our workshop, feel free to pay us a visit anytime and check out our work. Just let us know first so we can make sure to put the kettle on!</p>
+                <p>Get in touch with us and we'll do our very best to get back to you within 24 hours. Below is also directions to our workshop, feel free to pay us a visit anytime and check out our work. Just let us know first so we can make sure to put the kettle on!</p>
             </div><img alt="Kitchen Image" id="TopImage" src="Images/KitchenTraditionalColourBlock.jpg">
             <div class="OpeningHeader" style="width:80%; margin-bottom:0;">
                 <h2>Directions to the Workshop</h2>
                 <p>We are based in the village of Rinn just outside Dungarvan town. When you get to the village, take the first right after the Spar shop, our workshop is the third building on the left.</p>
             </div>
-                <div id="map"></div>
-                <script>
-                    function initMap() {
-                        var Waterford = { lat: 52.046894, lng: -7.572060 };
-                        var map = new google.maps.Map(document.getElementById('map'), {
-                            zoom: 7,
-                            center: Waterford
-                        });
-                        var marker = new google.maps.Marker({
-                            position: Waterford,
-                            map: map
-                        });
-                    }
-                </script>
+            <div id="map"></div>
+            <script>
+                function initMap() {
+                    var Waterford = { lat: 52.046894, lng: -7.572060 };
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 10,
+                        center: Waterford
+                    });
+                    var marker = new google.maps.Marker({
+                        position: Waterford,
+                        map: map
+                    });
+                }
+            </script>
 
-                <script async defer
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2ioL-76_dxSNYGxV-FExa_lAiFlLCpp0&callback=initMap">
-                </script>
+            <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2ioL-76_dxSNYGxV-FExa_lAiFlLCpp0&callback=initMap">
+            </script>
         </div>
-		<br />														
-		<!--footer-->
-		<div id="footer-container">
-			<img alt="Wood Bee Designs Logo" id="footerLogo" src="images/LogoFoot.png">
-			<div id="footerAdress">
-				<p>086 339 6048<br>
-				Rinn, Dungarvan<br>
-				Co. Waterford<br>
-				hi@woodbeedesigns.com</p>
-			</div>
-			<ul id="footerNav">
-				<li class="fNavItem">
-					<a href="Home.html">HOME</a>
-				</li>
-				<li class="fNavItem">
-					<a href="AboutUs.html">ABOUT</a>
-				</li>
-				<li class="fNavItem">
-					<a href="Kitchens.html">KITCHENS</a>
-				</li>
-				<li class="fNavItem">
-					<a href="ContactUs.html">CONTACT</a>
-				</li>
-				<li class="fNavItem">
-					<a href="SiteMap.html">SITEMAP</a>
-				</li>
-			</ul>
-			<div id="footerFB">
-				<a href="https://www.facebook.com/woodbeeedesigns/"><img alt="Facebook Logo Link" src="Images/footerFacebook.png"></a>
-			</div>
-		</div>
-	</body>
+        <br />
+        <!--@end - body-->
+        <!--@start - footer-->
+        <div id="footer-container">
+            <img alt="Wood Bee Designs Logo" id="footerLogo" src="images/LogoFoot.png">
+
+            <div id="footerAdress">
+                <p>
+                    086 339 6048<br>
+                    Rinn, Dungarvan<br>
+                    Co. Waterford<br>
+                    hi@woodbeedesigns.com
+                </p>
+            </div>
+
+            <ul id="footerNav">
+                <li class="fNavItem">
+                    <a href="Home.html">HOME</a>
+                </li>
+                <li class="fNavItem">
+                    <a href="AboutUs.html">ABOUT</a>
+                </li>
+                <li class="fNavItem">
+                    <a href="Kitchens.html">KITCHENS</a>
+                </li>
+                <li class="fNavItem">
+                    <a href="ContactUs.html">CONTACT</a>
+                </li>
+            </ul>
+
+            <div id="footerFB">
+                <a href="https://www.facebook.com/woodbeeedesigns/"><img alt="Facebook Logo Link" src="Images/footerFacebook.png"></a>
+            </div>
+        </div>
+        <!--@end - footer-->
+    </body>
 </html>

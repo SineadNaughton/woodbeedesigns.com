@@ -110,12 +110,12 @@ body{
 }
 
 .flex-container-item-button{
-	display:inline-block; 
-	border:1px solid grey; 
-	padding:0px 16px; 
-	color:white; 
-	background-color:black; 
-	border-radius:5px; 
+	display:inline-block;
+	border: 1px solid #666;
+	padding:0px 16px;
+	color:white;
+	background-color: #444;
+	border-radius:5px;
 	text-decoration:none;
 }
 

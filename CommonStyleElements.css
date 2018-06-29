@@ -191,13 +191,14 @@ nav ul {
 }
 /*this is a link to contact us page only to be displayed on mobile when the nav is no longer sticky*/
 #display-in-mobile{
-	display: none;
+	clear:both;
+	display: block;
 	font-weight: bold;
 	text-align: center;
 	text-decoration: none;
 	color: #0C0C0C;
 	background-color: #FED728;
-	margin: 2%;
+	margin: 1%;
 }
 
 
