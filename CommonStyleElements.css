@@ -79,7 +79,7 @@ nav ul {
 
 .navItem {
 	float: left;
-	width: 25%;
+	width: 20%;
 }
 
 .navItem  a{
@@ -142,7 +142,7 @@ nav ul {
 	height: auto;
 }
 
-#footerAdress{
+#footerAddress{
 	flex: 1;
 	color: white;
 	align-self: center;
@@ -186,8 +186,9 @@ nav ul {
 #footerFB img{
 	position: inherit;
 	float: right;
-	margin-right: 10%;
-	width: 50%;
+	margin-left: auto;
+	margin-right: 1em;
+	width: 4em;
 }
 /*this is a link to contact us page only to be displayed on mobile when the nav is no longer sticky*/
 #display-in-mobile{
@@ -210,10 +211,6 @@ nav ul {
 @media only screen and (max-width: 1024px){
 	#headerFB{
 		display: none;
-	}
-	
-	#footerFB img{
-		width: 80%;
 	}
 	
 	.fNavItem{
@@ -248,10 +245,7 @@ nav ul {
     display: none;
 	}
   
-	#footerFB img{
-		width: 20%;
-		margin-right: 40%;
-		margin-left: 40%;
+	#footerFB img{		
 		float: none;	
 	}
 	
@@ -279,7 +273,7 @@ nav ul {
 	}
 	
 	/*aligns the now stacked contact into in header and footer */
-	#footerAdress, #contactinfo{
+	#footerAddress, #contactinfo{
 		align-self:center;
 		margin: auto;
 	}
@@ -290,7 +284,7 @@ nav ul {
 	}
 	
 	/*centers text in footer address*/
-	#footerAdress{
+	#footerAddress{
 		text-align: center;
 	}
 
@@ -299,10 +293,7 @@ nav ul {
 		width: 30%;
 	}
 	/*centers and increases FB logo size on small device*/
-	#footerFB img{
-		width: 20%;
-		margin-right: 40%;
-		margin-left: 40%;
+	#footerFB img{				
 		float: none;	
 	}
 }

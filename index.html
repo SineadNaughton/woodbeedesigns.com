@@ -1,152 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!--tags to add CSS files, JS file, google font, JQuery Library, meta tag to make media query perform on device width or resized browser-->
-		<title>Wood Bee Designs Home</title>
-		<link href="Home.css" rel="stylesheet">
-		<link href="CommonStyleElements.css" rel="stylesheet">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-		</script>
-		<script src="Home.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-		<meta content="width=device-width" name="viewport">
-	</head>
-    <body>
 
-        <!--@start - header-->
-        <div id="header">
-            <img alt="Wood Bee Designs Logo" id="logo" src="Images/Logo.png" width="60">
-            <div id="contactinfo">
-                <p>
-                    086 339 6048<br>
-                    hi@woodbeedesigns.com
-                </p>
+<head>
+    <title>Wood Bee Designs - Home</title>
+
+    <meta charset="utf-8" />
+    <meta content="width=device-width" name="viewport" />
+
+    <link href="CommonStyleElements.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+
+    <link href="Home.css" rel="stylesheet" />
+    <script src="Home.js"></script>
+</head>
+
+<body>
+
+    <!--@start - header-->
+    <div id="header">
+        <img alt="Wood Bee Designs Logo" id="logo" src="Images/Logo.png" width="60">
+        <div id="contactinfo">
+            <p>
+                086 339 6048
+                <br> hi@woodbeedesigns.com
+            </p>
+        </div>
+        <div id="headerFB">
+            <a href="https://www.facebook.com/woodbeeedesigns/">
+                <img alt="Facebook Logo Link" src="Images/footerFacebook.png" width="60">
+            </a>
+        </div>
+    </div>
+
+    <!--nav bar-->
+    <nav>
+        <ul>
+            <li class="navItem">
+                <a href="index.html">HOME</a>
+            </li>
+            <li class="navItem">
+                <a href="AboutUs.html">ABOUT</a>
+            </li>
+            <li class="navItem">
+                <a href="Kitchens.html">KITCHENS</a>
+            </li>
+            <li class="navItem">
+                <a href="Furniture.html">FURNITURE</a>
+            </li>
+            <li id="contact" class="navItem">
+                <a href="ContactUs.html">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+    <!--@end - header-->
+
+    <!--@start - body-->
+    <!-- large image-->
+    <div>
+        <img alt="Image of Kitchen" id="largeimage" src="Images/blue-shaker-960x480.jpg">
+    </div>
+
+    <!-- intro text -->
+    <div id="intro">
+        <h1>Wood Bee Designs</h1>
+        <p>Here at Wood Bee Designs, we create bespoke kitchens &amp; furniture especially for you.</p>
+    </div>
+
+    <!-- USP icons -->
+    <div id="USP">
+        <div class="icon">
+            <img alt="Tree Icon" src="Images/TreeIcon.png">
+            <h3>Quality Raw Materials</h3>
+            <p>All our raw materials are of the highest quality and locally sourced</p>
+        </div>
+        <div class="icon">
+            <img alt="File Icon" src="Images/FileIcon.png">
+            <h3>Custom Designs</h3>
+            <p>Our kitchens &amp; furniture are uniquely created for each of our customers to perfectly fit their home</p>
+        </div>
+        <div class="icon">
+            <img alt="Speech Icon" src="Images/SpeechIcon.png">
+            <h3>Happy Customers</h3>
+            <p>Our customers are happy ones - and we always work super-duper hard to keep it that way!</p>
+        </div>
+    </div>
+
+    <!-- changing links -->
+    <div id="flex-container1">
+        <div id="flex-container-image1"></div>
+        <div class="flex-container-item">
+            <h2>Handcrafted Happiness</h2>
+            <p>All of our kitchens &amp; furniture are lovingly crafted by expert hands using traditional carpentry techniques
+                and locally sourced raw materials.</p>
+            <a class="flex-container-item-button" href="AboutUs.html">more...</a>
+        </div>
+    </div>
+    <div id="flex-container2">
+        <div id="flex-container-image2"></div>
+        <div class="flex-container-item">
+            <h2>A Kitchen to Complete Your Home</h2>
+            <p>A Wood Bee Designs kitchen will add the perfect finish to the heart of your home. Our kitchens can be made in
+                a variety of finishes, colours, and designs. Take a look at our work for some inspiration.</p>
+            <a class="flex-container-item-button"
+                href="Kitchens.html">more...</a>
+        </div>
+    </div>
+
+    <!-- testimonials -->
+    <div id="testimonial">
+        <h2>Customer Testimonials</h2>
+        <p>Over the years we've had more than a few extremely satisfied customers</p>
+
+        <div id="quotes">
+            <div class="quote">
+                <h3>Mary, Dungarvan</h3>
+                <p>"I'm so glad that I got in touch with Wood Bee Designs. Colin did a wonderful job on my new kitchen and I
+                    couldn't be happier."</p>
             </div>
-            <div id="headerFB">
-                <a href="https://www.facebook.com/woodbeeedesigns/"><img alt="Facebook Logo Link" src="Images/footerFacebook.png" width="60"></a>
+            <div class="quote">
+                <h3>George, Ardmore</h3>
+                <p>"I can't recommend Wood Bee Designs strongly enough, my new kitchen looks amazing and really fits well with
+                    my home."</p>
+            </div>
+            <div class="quote">
+                <h3>Susan, Tramore</h3>
+                <p>"Wood Bee Designs were fantastic, Colin was a dream to work with. The kitchen looks great and I'm over the
+                    moon."</p>
             </div>
         </div>
 
-        <!--nav bar-->
-        <nav>
-            <ul>
-                <li class="navItem">
-                    <a href="index.html">HOME</a>
-                </li>
-                <li class="navItem">
-                    <a href="AboutUs.html">ABOUT</a>
-                </li>
-                <li class="navItem">
-                    <a href="Kitchens.html">KITCHENS</a>
-                </li>
-                <li id="contact" class="navItem">
-                    <a href="ContactUs.html">CONTACT</a>
-                </li>
-            </ul>
-        </nav>
-        <!--@end - header-->
-        <!--@start - body-->
-        <!-- large image-->
-        <div><img alt="Image of Kitchen" id="largeimage" src="Images/blue-shaker-960x480.jpg"></div>
+        <!--contact section displays on mobile when top nav not sticky-->
+    </div>
+    <!--@end - body-->
 
-        <!-- intro text -->
-        <div id="intro">
-            <h1>Wood Bee Designs</h1>
-            <p>Here at Wood Bee Designs we aim to bring spectacular fitted kitchens to customers who want to give the heart of their home an extra dash of wow, a pinch of fabulous, and a drizzle of delightfulness. <span id="hide-in-mobile">And whilst we can't promise to be there every morning to butter your toast, we can promise that we'll design a kitchen that works for you. To make life a little bit easier and a whole lot better.</span></p>
+    <!--@start - call-to-action-->
+    <a href="ContactUs.html" id="display-in-mobile">Get in Touch to Discuss Kitchens &amp; Furniture Today!</a>
+    <!--@end - body-->
+
+    <!--@start - footer-->
+    <div id="footer-container">
+        <img alt="Wood Bee Designs Logo" id="footerLogo" src="Images/LogoFoot.png">
+
+        <div id="footerAddress">
+            <p>
+                086 339 6048
+                <br> An Rinn, Dungarvan
+                <br> Co. Waterford
+                <br> hi@woodbeedesigns.com
+            </p>
         </div>
 
-        <!-- USP icons -->
-        <div id="USP">
-            <div class="icon">
-                <img alt="Tree Icon" src="Images/TreeIcon.png">
-                <h3>Quality Raw Materials</h3>
-                <p>All our raw materials are of the highest quality and locally sourced</p>
-            </div>
-            <div class="icon">
-                <img alt="File Icon" src="Images/FileIcon.png">
-                <h3>Custom Designs</h3>
-                <p>Our kitchens are uniquely created for each of our customers to perfectly fit their home</p>
-            </div>
-            <div class="icon">
-                <img alt="Speech Icon" src="Images/SpeechIcon.png">
-                <h3>Happy Customers</h3>
-                <p>Our customers are happy ones - and we always work super-duper hard to keep it that way!</p>
-            </div>
+        <ul id="footerNav">
+            <li class="fNavItem">
+                <a href="index.html">HOME</a>
+            </li>
+            <li class="fNavItem">
+                <a href="AboutUs.html">ABOUT</a>
+            </li>
+            <li class="fNavItem">
+                <a href="Kitchens.html">KITCHENS</a>
+            </li>
+            <li class="fNavItem">
+                <a href="Furniture.html">FURNITURE</a>
+            </li>
+            <li class="fNavItem">
+                <a href="ContactUs.html">CONTACT</a>
+            </li>
+        </ul>
+
+        <div id="footerFB">
+            <a href="https://www.facebook.com/woodbeeedesigns/">
+                <img alt="Facebook Logo Link" src="Images/footerFacebook.png">
+            </a>
         </div>
+    </div>
+    <!--@end - footer-->
+</body>
 
-        <!-- changing links -->
-        <div id="flex-container1">
-            <div id="flex-container-image1"></div>
-            <div class="flex-container-item">
-                <h2>Hand Crafted Happiness</h2>
-                <p>All of our kitchens are lovingly crafted by expert hands using traditional carpentry techniques and locally sourced raw materials. Giving your kitchen the most spectacular and quality finish.</p><a class="flex-container-item-button" href="AboutUs.html">More...</a>
-            </div>
-        </div>
-        <div id="flex-container2">
-            <div id="flex-container-image2"></div>
-            <div class="flex-container-item">
-                <h2>A Kitchen to Complete Your Home</h2>
-                <p>A Wood Bee Designs kitchen will add the perfect finish to the heart of your home. Our kitchens can be made in a variety of finishes, colours, and designs. Take a look at our work for some inspiration.</p><a class="flex-container-item-button" href="Kitchens.html">More...</a>
-            </div>
-        </div>
-
-        <!-- testimonials -->
-        <div id="testimonial">
-            <h2>Customer Testimonials</h2>
-            <p>Over the years we've had more than a few extremely satisfied customers</p>
-
-            <div id="quotes">
-                <div class="quote">
-                    <h3>Mary, Dungarvan</h3>
-                    <p>"I'm so glad that I got in touch with Wood Bee Designs. Colin did a wonderful job on my new kitchen and I couldn't be happier."</p>
-                </div>
-                <div class="quote">
-                    <h3>George, Ardmore</h3>
-                    <p>"I can't recommend Wood Bee Designs strongly enough, my new kitchen looks amazing and really fits well with my home."</p>
-                </div>
-                <div class="quote">
-                    <h3>Susan, Tramore</h3>
-                    <p>"Wood Bee Designs were fantastic, Colin was a dream to work with. The kitchen looks great and I'm over the moon."</p>
-                </div>
-            </div>
-
-            <!--contact section displays on mobile when top nav not sticky-->
-        </div>
-        <!--@end - body-->
-
-        <!--@start - footer-->
-        <a href="ContactUs.html" id="display-in-mobile">Get in Touch Here to Discuss Your New Kitchen Today!</a>
-        <div id="footer-container">
-            <img alt="Wood Bee Designs Logo" id="footerLogo" src="Images/LogoFoot.png">
-
-            <div id="footerAdress">
-                <p>
-                    086 339 6048<br>
-                    Rinn, Dungarvan<br>
-                    Co. Waterford<br>
-                    hi@woodbeedesigns.com
-                </p>
-            </div>
-
-            <ul id="footerNav">
-                <li class="fNavItem">
-                    <a href="index.html">HOME</a>
-                </li>
-                <li class="fNavItem">
-                    <a href="AboutUs.html">ABOUT</a>
-                </li>
-                <li class="fNavItem">
-                    <a href="Kitchens.html">KITCHENS</a>
-                </li>
-                <li class="fNavItem">
-                    <a href="ContactUs.html">CONTACT</a>
-                </li>
-            </ul>
-
-            <div id="footerFB">
-                <a href="https://www.facebook.com/woodbeeedesigns/"><img alt="Facebook Logo Link" src="Images/footerFacebook.png"></a>
-            </div>
-        </div>
-        <!--@end - footer-->
-    </body>
 </html>

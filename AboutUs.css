@@ -1,5 +1,3 @@
-/*AUTHOR DINGFEN ZHONG*/
-
 body{
 	font-family: Raleway, sans-serif;
 	letter-spacing: .1em;
@@ -7,9 +5,6 @@ body{
 	color: #4D4C4E;
 	font-size: 1em;
 }
-
-/*NAV BAR, HEADER, and FOOTER LINKED IN HEADERFOOTER.CSS*/
-/* Main content below header*/
 
 .maincontent{
 	height:auto;
@@ -92,15 +87,6 @@ body{
 #accordion h3 p .a5{
 	margin-bottom: 15%;
 }
-
-
-#footer-container{
-	/* margin-top: 5%; */
-}
-
-
-/*media queries to alter on a tablet or altered screen - meta tag in html to use max-width as max-device width as well*/
-
 
 /* make images stack on smaller screen - altered desktop view or a large mobile phone - */
 @media only screen and (max-width: 620px) {
